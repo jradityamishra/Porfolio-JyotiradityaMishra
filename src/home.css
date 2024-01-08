@@ -108,14 +108,14 @@ ul {
   position: relative;
 }
 .body .main-content .scene a {
-  width: 1.5vmin;
-  height: 1.5vmin;
+  width: 0.5vmin;
+  height: 0.5vmin;
   transform: translateZ(-100vmin) rotateY(90deg) rotateX(var(--rx))
     translateZ(var(--x)) scaleX(1);
   position: absolute;
   top: var(--y);
-  left: var(--x);
-  animation: animate 1.5s infinite ease-in;
+  /* left: var(--x); */
+  animation: animate 5s infinite ease-in;
   background: #fff;
   box-shadow: 0 0 20px rgb(10, 239, 255);
 }
