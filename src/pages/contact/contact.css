@@ -1,0 +1,256 @@
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+.section {
+  background: var(--bg-black-900);
+  min-height: 100vh;
+  display: block;
+  padding: 0 30px;
+  opacity: 1;
+}
+.hidden {
+  display: none;
+}
+.main-content {
+  padding-left: 130px;
+}
+.padd-15 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container {
+  max-width: 1100px;
+  width: 100%;
+  margin: auto;
+}
+.section .container {
+  padding-top: 60px;
+  padding-bottom: 70px;
+}
+.section-title {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 60px;
+}
+.section-title h2 {
+  font-size: 40px;
+  color: var(--text-black-900);
+  font-weight: 700;
+  position: relative;
+}
+.section-title h2::before {
+  content: "";
+  height: 4px;
+  width: 50px;
+  background-color: var(--skin-color);
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+.section-title h2::after {
+  content: "";
+  height: 4px;
+  width: 25px;
+  background-color: var(--skin-color);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 8px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: relative;
+}
+.btn {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  border-radius: 40px;
+  border: none;
+  display: inline-block;
+  white-space: nowrap;
+  padding: 12px 35px;
+  background: var(--skin-color);
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  transform: scale(1s);
+}
+.shadow-dark {
+  box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+.contact-title {
+  color: var(--skin-color);
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.contact-sub-title {
+  color: var(--text-black-900);
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 0px;
+  padding-bottom: 15px;
+}
+.contact .contact-info-item {
+  flex: 0 0 25%;
+  max-width: 23.5%;
+  text-align: center;
+  margin: 5px;
+}
+#linkedin a {
+  text-decoration: none;
+  color: white;
+}
+.contact .contact-info-item .icon {
+  display: inline-block;
+  color: white;
+}
+.contact .conatct-info-item .icon .fa {
+  font-size: 25px;
+  color: var(--skin-color);
+}
+.contact .contact-info-item h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-black-900);
+  text-transform: capitalize;
+  margin: 15px 0 5px;
+  padding-bottom: 10px;
+}
+.contact .contact-info-item {
+  background-color: var(--bg-black-100);
+  border: 3px solid var(--bg-black-50);
+  border-radius: 10px;
+  /* padding: 10px 10px; */
+  padding-bottom: 34px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add smooth transitions for both transform and box-shadow */
+  box-shadow: 0 10px 8px rgba(58, 4, 195, 0.1);
+  transform-origin: center center;
+}
+.contact .contact-info-item:hover {
+  transform: translateX(-10px) rotate(5deg);
+  box-shadow: 0 25px 25px rgba(5, 28, 205, 0.2);
+}
+.contact .contact-info-item img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.contact .contact-info-item p {
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--text-black-900);
+  font-weight: 400;
+}
+.contact .contact-form {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.contact .contact-form .col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.contact .contact-form .col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.contact .contact-form .form-item {
+  margin-bottom: 30px;
+}
+
+.contact .contact-form .form-item .form-control {
+  width: 100%;
+  height: 50%;
+  border-radius: 25px;
+  background-color: var(--bg-black-100);
+  border: 1px solid var(--bg-black-50);
+  padding: 10px 25px;
+  font-size: 16px;
+  color: var(--text-black-700);
+  transition: all 0.3s ease;
+  caret-color: white;
+}
+.contact .contact-form .form-item .form-group input {
+  color: white;
+}
+.contact .contact-form .form-item .form-group textarea {
+  color: white;
+}
+.contact .contact-form .form-item .form-control:focus {
+  box-shadow: 0 0 20px rgba(245, 245, 246, 0.15);
+}
+
+.contact .contact-form .form-item textarea.form-control {
+  height: 140px;
+}
+.contact .contact-form .btn {
+  height: 50px;
+  padding: 0 50px;
+}
+@media (max-width: 1199px) {
+  .aside {
+    left: -270px;
+  }
+  .main-content {
+    padding: 0;
+  }
+  .about .about-content .personal-info .info-item p span {
+    display: block;
+  }
+}
+@media (max-width: 991px) {
+  .home .home-info {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .home .home-img {
+    display: none;
+  }
+  .service .service-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .contact .contact-info-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media (max-width: 925px) {
+  .home .home-info {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .about .about-content .experience,
+  .about .about-content .education,
+  .about .about-content .skills,
+  .about .about-content .personal-info {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .portfolio .portfolio-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .contact .contact-info-item,
+  .contact .contact-form .col-6,
+  .service .service-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .home .home-info {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
